@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
+
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 65% 20%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    height: 100vh;
+
+}
+	#header{
+			grid-area: header; 
+			
+			position:fixed;
+			top: 0;
+			width: 100%;
+			min-height: 70px;
+			background: white;
+			border-bottom: 1px solid ; 
+			border-color: gray;
+			z-index: 100;
+			font-weight:  normal; 
+			background: black;
+	}
+
+
+
+ 		 .flexNav{
+				height: 500px;
+				width: 570.13px;
+				height: 70px;
+				padding-right: 180px;
+				display: flex;
+				flex-direction: row; 
+				flex-wrap: wrap;		
+	
+				float: right;
+				list-style: none;
+				align-items: center;
+
+			}
+
+  	  			.flexNav a{
+   		 			margin:20px;
+   		 			font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+		 			color: white;
+		
+    			  }
+
+                    .logo{
+	                    float: left;
+	                    min-width: 100px;
+	                    padding-top: 15px;
+	                    padding-left: 90px;
+                    }
+  
+                        .logo h2{
+	                       font-size: 25px;
+	                       font-family: 'Pacifico', cursive;
+	                       color:#E0BD48;
+                          }
+
+		@media(max-width: 1000px){
+			.flexNav{
+			padding-right: 0px;
+			}
+		}
+
+
+	main{
+
+		grid-area: main;
+		padding-top: 20px;
+		
+		background-color: #ebebeb;
+	}
+
+		.productos{
+			height: 500px;
+			background-color: #ebebeb;
+			display: flex;
+			flex-direction: column; 
+			flex-wrap: wrap;		
+			justify-content: center;
+			color: black;
+			margin-right: 50px;
+		}
+
+   				    .productos img{
+   					    margin: 15px;
+   				    }
+
+	     		    .productos img:hover{
+		     		    transform: scale(1.05);
+	     		    }
+
+	         	    .productos img:hover{
+	         		    box-shadow: 5px 5px 20px 5px rgba(125,125,125,0.5);
+	         		    padding: 1px;
+	         		    cursor: pointer;
+	         	    }
+
+  
+	body h3{
+		padding-left: 15px;
+		font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+
+	}
+
+   
+	.botonWasa img{
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 50px;
+		height: 50px;
+		padding: 5px;
+		border-radius: 100px 100px 100px 100px;
+		background: green;
+		cursor: pointer;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+		transition: all 200ms ease-in-out;
+		
+		}
+
+		.botonWasa img:hover{
+			transform: scale(1.1);
+
+		}
+
+	
+
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 33.4% 33.3% 33.3%;
+    grid-template-areas: 
+    "direccion mapa redes";
+    height: 150px;
+    color: white;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background: rgb(87,86,104);
+	background: radial-gradient(circle, rgba(87,86,104,1) 0%, rgba(73,73,96,1) 51%, rgba(52,52,52,1) 100%);
+
+    }
+	
+		.infoDireccion{
+
+			grid-area: direccion;
+			
+			text-align: center;
+			margin: auto;
+		
+		}
+
+		
+
+		.mapa{
+			grid-area: mapa;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+				.mapa img{
+					margin: auto;
+					width: 100px;
+				}
+
+	
+		.redesSociales{
+			grid-area: redes;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+
+		}
+				.redesSociales h3{
+					float: top;
+					clear: all;
+				}
+				.redesSociales img{
+					width: 50px;
+					height: 50px;
+					}
+
+
+				
+
+
+  
+
+

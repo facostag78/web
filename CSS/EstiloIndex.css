@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
+
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+}
+	
+
+						.logo{
+							padding-left: 80px;
+						}
+
+							.logo h2{
+	
+								font-size: 25px;
+								font-family: 'Pacifico', cursive;
+								color:#E0BD48;
+							}
+
+
+				.carousel-control-prev, .carousel-control-next{
+				width: 80px;
+
+				}
+
+				.alto{
+					height: 500px;
+				}
+
+
+				.mi-caption{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+				}
+				.mi-caption.abajo{
+					justify-content: end;
+				}
+				.mi-caption h5{
+					font-size: 2.25rem;
+				}					
+
+
+
+	.productosPopularesFlex{
+			max-height: 500px;
+			background-color: #ebebeb;
+			display: flex;
+			flex-direction: column; 
+			flex-wrap: wrap;		
+			justify-content: center;
+			color: black;
+   	}
+
+   		.hijo{
+  		padding: 20px; 	
+		}
+
+
+
+	
+
+
+	@media(max-width: 1000px){
+		.flexNav{
+			padding-right: 0px;
+		}
+	}
+
+
+	main{
+
+		padding-top: 10px;
+		padding-left: 80px;
+		background-color: #ebebeb;
+	}
+
+
+	.banner video{
+		padding-top: 0;
+		width: 100vw;
+		height: 500px;
+	}
+
+	
+
+
+	#contentMain .hijo:hover{
+		transform: scale(1.05);
+	}
+
+	#contentMain .hijo:hover img{
+	box-shadow: 5px 5px 20px 5px rgba(125,125,125,0.5);
+	cursor: pointer;
+
+	}
+
+
+	#contentMain h3{
+		padding-top: 15px;
+		font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+
+	}
+
+
+	.botonWasa img{
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 50px;
+		height: 50px;
+		padding: 5px;
+		border-radius: 100px 100px 100px 100px;
+		background: green;
+		cursor: pointer;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+		transition: all 200ms ease-in-out;
+		
+		}
+
+		.botonWasa img:hover{
+			transform: scale(1.1);
+
+	}
+
+	
+
+
+ footer{
+    display: grid;
+    grid-template-columns: 33.4% 33.3% 33.3%;
+    grid-template-areas: 
+    "direccion mapa redes";
+    height: 150px;
+    color: white;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background: rgb(87,86,104);
+	background: radial-gradient(circle, rgba(87,86,104,1) 0%, rgba(73,73,96,1) 51%, rgba(52,52,52,1) 100%);
+
+    }
+	
+		.infoDireccion{
+
+			grid-area: direccion;
+			
+			text-align: center;
+			margin: auto;
+		
+		}
+
+		
+
+		.mapa{
+			grid-area: mapa;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+				.mapa img{
+					margin: auto;
+					width: 100px;
+				}
+
+	
+		.redesSociales{
+			grid-area: redes;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+
+		}
+				.redesSociales h3{
+					float: top;
+					clear: all;
+				}
+				.redesSociales img{
+					width: 50px;
+					height: 50px;
+					}
+
+
+				
+
+
+  
+
+

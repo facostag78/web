@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Ubuntu:wght@300&display=swap');
+
+*{
+	text-decoration: none;
+	margin: 0;
+
+}
+
+  .flex{
+	  display: flex;
+	  height: 300px;
+	  flex direction: row;
+	  flex: wrap;
+	  justify-content: space-around;
+   }
+
+
+   .hijo{
+
+   		background #ebebeb;
+   		
+
+   }
+
+
+
+.logo{
+	padding-left: 50px;
+	float: left;
+	display: block;
+
+}
+
+.logo img{
+	height: 50px;
+	width: 50px;
+}
+
+.logo h2{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+#header nav h2{
+
+	font-family: 'Ubuntu', sans-serif;
+	color: black;
+	font-family: 'Ranchers', cursive;
+}
+
+ #header{
+	
+			position:fixed;
+			top: 0;
+			width: 100%;
+			min-height: 50px;
+			background: white;
+			border-bottom: 1px solid ; 
+			border-color: gray;
+			z-index: 100;
+			font-weight:  normal; 
+			
+}
+
+nav a{
+	display: inline-block;
+	float: left;
+}
+
+
+
+#header .control{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	list-style: none;
+	float: left;
+	margin: auto;
+	padding-top: 30px;
+	box-sizing:  border-box;
+	width: 80%;
+
+	padding-left: 100px;
+	display: inline-block;
+
+}
+
+#header ul li {
+	display: inline-block; 
+	margin-right: 30px;
+}
+
+#header ul{
+	padding-left: 30px;
+}
+
+
+#header ul li a{
+	color:black;
+}
+
+
+
+main{
+	padding-top: 100px;
+	background-color: #ebebeb;
+}
+
+section img{
+	padding: 20px 20px 20px 20px;
+}
+
+	
+
+    #Footer{
+    	grid-area: footer;
+    }
+
+	.contendFooter{
+			
+			display grid;
+			grid-template-columns: 33.4% 33.3% 33.3%;
+			grid-template-areas: 
+			"direccion mapa redesSociales"
+			padding-top: 100px;
+		}
+	
+		.infoDireccion{
+
+			grid-area: direccion;
+			width: 50%;
+			padding: 50px;  
+			float: left;
+			
+			box-sizing: border-box;
+			position: relative;
+		
+		}
+
+		
+
+		.mapa{
+			grid-area: mapa;
+			width: 50%;
+			padding: 30px;
+			float: right;
+			box-sizing: border-box;
+			
+			
+			position: relative;
+
+		}
+
+		.redesSociales{
+			grid-area: redesSociales;
+		}
+
+
+
+
+
+#sectionNosotros{
+	width: 100%;
+}
+
+.nosotros1{
+	font-family: initial;
+	width: 40%;
+	margin: 10px;
+	padding: 0px;
+	border: 10px solid;
+	border-color: #D8D8D8; 
+	background-color: #C6C6C6;
+	float: left;
+	box-sizing:border-box;
+
+    /*box-sizing: border-box;*/
+
+}
+
+
+
+.estiloPunto1{
+	list-style-image: url("../Media/dog.png");
+
+}
+
+.estiloPunto2 {
+	list-style-image: url("../Media/feliz.png");
+}
+
+
